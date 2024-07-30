@@ -1,11 +1,23 @@
-// Compute the area of a circle.
+
+class Circle
+{
+     private double radius;
+     public void setradius(double r)
+     {
+            radius = r;
+     }
+     public double getarea()
+     {
+           return 3.14*radius*radius;
+     }
+}
 class Area
 {
- public static void main(String args[]) {
-  double pi, r, a;
-  r = 10.8; // radius of circle
-  pi = 3.1416; // pi, approximately
-  a = pi * r * r; // compute area
- System.out.println("Area of circle is " + a);
- }
+     public static void          main(String[]args)
+     {
+         Circle circle = new Circle();
+         circle.setradius(6);
+         System.out.println("Area of circle is: " + circle.getarea());
+     }
 }
+  
