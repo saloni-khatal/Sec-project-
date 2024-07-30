@@ -1,6 +1,6 @@
 public class Example1
 {
-     public static void main(String args []) 
+     public static void main(String[] args) 
      {
         Example1 example = new Example1();
         example.displayMessage();
